@@ -24,6 +24,7 @@ public class VibrationManager : MonoBehaviour
     {
         if (trigger.GetState(controller))
         {
+            Debug.Log("Trigger ON");
             vibration.Execute(secStart, secEnd, frequency, strength, controller);
         }
     }
